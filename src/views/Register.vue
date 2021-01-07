@@ -1,16 +1,16 @@
 <template>
 	<div class="home">
-		<HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+		<Register />
 	</div>
 </template>
 
 <script lang="ts">
 	import Vue from 'vue';
-	import HelloWorld from '@/components/HelloWorld.vue';
+	import Register from '@/components/Register.vue';
 
 	export default Vue.extend({
 		components: {
-			HelloWorld,
+			Register,
 		},
 	});
 </script>
