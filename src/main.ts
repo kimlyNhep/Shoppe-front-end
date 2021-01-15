@@ -15,12 +15,12 @@ Vue.cookies.config({ expires: '7d' });
 Vue.prototype.$http = axios;
 const token = localStorage.getItem('token');
 if (token) {
-	Vue.prototype.$http.defaults.headers.common['Authorization'] = token;
+  Vue.prototype.$http.defaults.headers.common['Authorization'] = token;
 }
 
 new Vue({
-	router,
-	store,
-	vuetify,
-	render: (h) => h(App),
+  router,
+  store,
+  vuetify,
+  render: (h) => h(App),
 }).$mount('#app');

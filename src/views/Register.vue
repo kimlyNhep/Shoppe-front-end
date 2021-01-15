@@ -1,16 +1,18 @@
 <template>
-	<div class="home">
-		<Register />
-	</div>
+  <v-app>
+    <div class="home">
+      <Register />
+    </div>
+  </v-app>
 </template>
 
 <script lang="ts">
-	import Vue from 'vue';
-	import Register from '@/components/Register.vue';
+import Vue from 'vue';
+import Register from '@/components/Register.vue';
 
-	export default Vue.extend({
-		components: {
-			Register,
-		},
-	});
+export default Vue.extend({
+  components: {
+    Register,
+  },
+});
 </script>
